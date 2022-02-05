@@ -1,0 +1,31 @@
+5. 
+Initiated fuel state with 0 and after getting data, change the type not a good idea, try to use TypeScript and make states typization
+
+9: links to services should not be presente, must be used another methodology to hide sencitive dade access  
+
+12. 
+*related with line 5*, you should receive object but in state have number
+
+13. 
+best pratices recomend that console.log() must be used only for developing and doesn't appear in production code 
+
+14-15. 
+errors treatmente absent, user will have bad expirience in case of service problems, maybe setAlertSet( for example), if not "processing..." 
+will be present forever
+
+18. 
+I don't knpw if this line must be presente at all here, if should then logic about fuel state must be changed
+
+18,19: 
+absence of linter and autosave code formatting (formatting should pass "else" to new line, on my opinion)
+
+5-12: not bad practice, create custom hook for separation visual and logic implementations
+
+6, 18, 19, 20, 25:
+more preferable use some variables or enums in case of using TypeScript, best pratices recoments not user string diractly, and by the way it makes
+your code DRYer and cleaner
+
+25. compearing string is not the best idea, reference to the previous comment
+
+25. No bad in this case use inline styles but it will be beter use at least style,  even better user styled-components or emotion-based 
+implementation with stylization componentsandone point in favor of exteral file ou libt=rary, /very poor stylization that makes very bad user expiriece

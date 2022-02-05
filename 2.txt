@@ -1,0 +1,53 @@
+1. FE (Front-end) part
+    a. Style: For start it will be good to know if we should use css-frameworks(Bootstrap, Material UI) and conventions (BOM for example) or FE 
+    will implement all styling based on other criterias (css, scss, sass, classnames, styled-components, emotion, etc). 
+    Which tool will be used as base for UI/UX implementation? - Figma, Balsamic, InVison, some Adobe apps.
+
+    Connetions features: fetch or axios.
+
+    Store toolkit: redux (only one that I was working with), react-redux, thunk (sagas in case of large application).
+
+    Forms: to manipulate user's data must be clear what exactly will be used on app: for examples redux-form, redux-final-form, formic, react-hook-form, etc
+    or form's all "activity" must be written from the scratch by our selfs.
+
+    Routing: not huge amount of possibilities - react-router(-dom).
+
+    Tests: the worst thing that was invented in the programming world are tests (IMHO) - jest, enzyme, maybe testing-library/react or 
+    don't use any of them.
+    
+    General app implementation: react-app-start or all will be created from the scratch : webpack, babel, typescript, bundlin  and all abount that: 
+    presets, plugins, loaders, transpilares, etc).
+
+    Images: what exactly we must use for work with user's images (svg, png, etc), it will be remote links or consumed from BE(back-end) base64-binaries?
+
+    b. As main folder we should have src/, inside at least components/, pages/, (mayby assets/, helpers/, theme/, store/, api/, 
+    config/ - for example for routing and store configurations). 
+
+    components/ (pages/) must have subfolders' structure based on component name and every subfolder must contain at least 3 
+    (in case development on functinal components possibly 4) files: index.ts/js, componentName.tsx/jsx, componentName.style.css(scss, sass), 
+    componentName.hooks.tsx/jsx. Maybe __tests__/ for tests implementation too.
+    store/, api/, config/ folders',... structure can be limited only by your imagination
+
+    For example store/ (in case of using sagas), should contain subfolder based on sub-state (userState/ as example) and each of them contains 4 files:
+    types.ts/js, actions.ts/js, reducer.ts/js, sagas.ts/js . And one more time __tests__/.
+    (and yes exists library saga-toolkit that helps do care of it, but I like to control all this be myself).
+
+    c. d. In "our case" I see 2 pages for create subfolders (profile/ and profileList/) and, maybe, one component with 3 
+    obligational props and 1 optional. (props: userName, email, userImage.
+    and 4-th props based on it we can apply styling changes on the profile page - description). 
+    But my expirience  tells me that better creat 2 components and, maybe in the future generilize them.
+
+    e. SPA apps mostly are interface centrtic with huge ecosystem of tools and libraries because of popularity.
+    non-SPA consuming service centric based on routs and note only. At least, that it was my expirience whem I was working with them.
+
+    f. I was never working before with NodeJS implementation so next section will be  enought short.
+
+    2. Back-end (BE) part:
+        a.b.c.
+        Must to be conventions with CRUD implementation that facilitate RESTful API implementation. I prefer towork with JSON responces, 
+        so it must be configurade too.
+        Will be nice to have support MVC as main structure for BE implementation.
+        As I now ExpressJS or NestJS must be present to be accessible, maybe some libriraries for DB connections must be present too.
+        That all that I can tell about BE on NodeJS.
+
+    
